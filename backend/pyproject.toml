@@ -1,0 +1,20 @@
+[project]
+name = "kaywe-backend"
+version = "0.1.0"
+description = "FastAPI backend for DJ KAYWE website"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+  "fastapi>=0.115.12",
+  "uvicorn[standard]>=0.34.0",
+  "pydantic-settings>=2.8.1"
+]
+
+[tool.uv]
+dev-dependencies = [
+  "pytest>=8.3.5"
+]
+
+[build-system]
+requires = ["hatchling>=1.27.0"]
+build-backend = "hatchling.build"
